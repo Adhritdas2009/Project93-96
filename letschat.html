@@ -1,0 +1,42 @@
+<html>
+   <head><title>Let's Chat</title>
+    <link rel="stylesheet" href="style.css">
+      <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+</head> 
+<body class="bg bg-success" onload="Welcome()">
+    <div class="container">
+    <center>
+        <button id="logout" onclick="logout()" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+        <br>
+    <div id="welcome" class="bg bg-info">
+        <br><br>
+        <img src="Logo.jpg" width="70px" height="70px" id="logo"><br><br>
+        <h1 id="welc">Welcome</h1>
+        <br>
+        <h2>Add Room</h2>
+        <br>
+        <input id="add" class="form-control" placeholder="Write Room Name" type="text">
+        <br>
+        <button id="addbtn" onclick="addRoom()" class="btn btn-info">Add Room</button>
+        <h3 class="color_white">#TRENDINGROOMS</h3>
+	     <div id="output"></div>
+        <br><br><br><br>
+    </div>
+    <script src="letschat.js"></script>
+</center>
+</div>
+</body>
+</html>
